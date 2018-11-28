@@ -1,0 +1,11 @@
+<div class="header">
+  <div class="title">Most {{selectedItem.label}}</div>
+  <div class="selector">
+    <select (change)="selectItem($event)">
+      <option *ngFor="let option of options" [value]="option.value"
+              [selected]="options.label === selectedItem.value">{{option.value}}</option>
+    </select>
+  </div>
+</div>
+
+<app-show *ngFor="let show of shows" [show]="show">{{show.title}}</app-show>
