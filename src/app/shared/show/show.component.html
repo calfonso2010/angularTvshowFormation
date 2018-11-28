@@ -3,8 +3,11 @@
     <img [src]="show.images.poster">
   </div>
   <div class="info">
-    <a href="{{show.resource_url}}" class="title">{{show.title}}</a>
-    <div appLabel class="genre"><span *ngFor="let genre of show.genres">{{genre}}</span></div>
+    <div class="title" routerLink="view/show/{{show.id}}">{{show.title}}</div>
+    <div class="genre">
+      <span appLabel *ngFor="let genre of show.genres">{{genre}}</span>
+    </div>
+    <div class="lastView" *ngIf="lastView">Last View: <span appLabel>{{lastView}}</span></div>
     <div class="description">{{show.description}}</div>
   </div>
 </div>

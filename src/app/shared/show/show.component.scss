@@ -1,7 +1,7 @@
 @import '../../../scss/common';
 
 .show {
-  font-family: Georgia;
+  font-family: Verdana;
   align-items: center;
   display: flex;
 
@@ -12,6 +12,9 @@
     img {
       width: 100%;
     }
+  }
+  div {
+    padding: 10px
   }
 
   .info {

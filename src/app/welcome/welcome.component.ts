@@ -29,11 +29,10 @@ export class WelcomeComponent implements OnInit {
     this.getBestShow();
   }
 
-  private getBestShow(){
+  private getBestShow() {
     this.apiService.get(environment.best, {order: this.selectedItem.value, limit: 10})
       .subscribe(res => {
         this.shows = res['shows'];
-        console.log(res);
       });
   }
 

@@ -12,7 +12,7 @@ export class ApiService {
   }
 
   static buildUrl(path: string, params?: {[key: string]: string | number}): string {
-    let url = environment.endpoint + environment.best;
+    let url = environment.endpoint + path;
     let separator = '?';
     Object.keys(params).forEach(k => {
       url = url + separator + k + '=' + params[k];

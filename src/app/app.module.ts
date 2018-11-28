@@ -6,19 +6,19 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import {CoreModule} from './core/core.module';
 import {SharedModule} from './shared/shared.module';
-import { LabelDirective } from './shared/directives/label.directive';
+import {ViewModule} from './view/view.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    LabelDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    ViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

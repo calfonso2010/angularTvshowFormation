@@ -1,0 +1,18 @@
+.episode {
+  align-items: center;
+  display: flex;
+
+  .code {
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .title{
+    flex: 1;
+  }
+
+  .date{
+    font-style: italic;
+  }
+}

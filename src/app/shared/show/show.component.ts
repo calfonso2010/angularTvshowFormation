@@ -11,6 +11,9 @@ export class ShowComponent implements OnInit {
   @Input()
   show: Show;
 
+  @Input()
+  lastView: string;
+
   constructor() { }
 
   ngOnInit() {

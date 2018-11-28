@@ -5,7 +5,9 @@
 export const environment = {
   production: false,
   endpoint: 'https://api.betaseries.com/',
-  best: 'shows/list'
+  best: 'shows/list',
+  full: 'shows/display',
+  episodes: 'shows/episodes'
 };
 
 /*

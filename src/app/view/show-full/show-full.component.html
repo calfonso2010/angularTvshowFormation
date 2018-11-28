@@ -1,0 +1,3 @@
+<app-show [show]="show" *ngIf="show" [lastView]="lastView"></app-show>
+
+<app-episodes [id]="show.id" *ngIf="show"(episodeWatched)="episodeWatched($event)"></app-episodes>

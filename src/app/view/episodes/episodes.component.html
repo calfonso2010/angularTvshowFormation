@@ -1,0 +1,5 @@
+<div class="episode" *ngFor="let episode of episodes$ | async">
+  <div class="code" (click)="watchEpisode(episode.code)">{{episode.code}}</div>
+  <div class="title">{{episode.title}}</div>
+  <div class="date">{{episode.date}}</div>
+</div>
