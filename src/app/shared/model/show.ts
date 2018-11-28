@@ -11,4 +11,5 @@ export class Show {
   network: string;
   seasons: number;
   episodes: number;
+  resource_url: string;
 }

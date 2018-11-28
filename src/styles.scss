@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'scss/common';
+
+.margo-label {
+  background: $blue-margo;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
